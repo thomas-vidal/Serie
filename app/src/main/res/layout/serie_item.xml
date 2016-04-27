@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimary"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/title"
+        android:text="text"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/abc_secondary_text_material_dark"
+        android:layout_alignParentTop="false"
+        android:padding="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seasonPicker"
+            android:text="1"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/seasonText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/episodePicker"
+            android:text="1"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:padding="10dp"
+            android:layout_alignTop="@+id/episodeText"
+            android:layout_toEndOf="@+id/episodeText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Season"
+            android:id="@+id/seasonText"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:padding="10dp"
+            android:layout_gravity="right|top"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Episode"
+            android:id="@+id/episodeText"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:padding="10dp"
+            android:layout_gravity="left|top"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>
