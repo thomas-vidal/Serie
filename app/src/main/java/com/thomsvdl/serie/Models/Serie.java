@@ -1,6 +1,8 @@
 package com.thomsvdl.serie.Models;
 
-public class Serie {
+import java.io.Serializable;
+
+public class Serie implements Serializable{
 
     private String name;
     private int episode = 1;

@@ -11,6 +11,7 @@ import com.thomsvdl.serie.R;
 import com.thomsvdl.serie.Models.Serie;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SerieAdapter extends ArrayAdapter<Serie>{
 
@@ -37,5 +38,13 @@ public class SerieAdapter extends ArrayAdapter<Serie>{
 
         // Return the completed view to render on screen
         return convertView;
+    }
+
+    public List<Serie> getList(){
+        ArrayList<Serie> list = new ArrayList<>();
+        for (int i = 0; i < this.getCount(); i++) {
+            list.add(getItem(i));
+        }
+        return list;
     }
 }
