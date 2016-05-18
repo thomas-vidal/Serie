@@ -46,7 +46,7 @@
             android:text="1"
             android:textColor="@color/abc_primary_text_material_dark"
             android:padding="10dp"
-            android:layout_alignTop="@+id/episodeText"
+            android:layout_alignParentBottom="true"
             android:layout_toEndOf="@+id/episodeText" />
 
         <TextView
@@ -70,5 +70,17 @@
             android:layout_gravity="left|top"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/addEpisodeButton"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
     </RelativeLayout>
 </RelativeLayout>
